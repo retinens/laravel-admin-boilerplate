@@ -4,9 +4,7 @@
 $font-family-sans-serif: 'Fira Sans', sans-serif;
 @import "variables";
 @import "~@coreui/coreui/scss/coreui";
-@import "~@fortawesome/fontawesome-free/scss/fontawesome";
-@import "~@fortawesome/fontawesome-free/scss/solid";
-@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-pro/css/all.css";
 @import "~select2/src/scss/core";
 @import "~datatables.net-bs4/css/dataTables.bootstrap4.min.css";
 @import "~@ttskch/select2-bootstrap4-theme/src/layout";
