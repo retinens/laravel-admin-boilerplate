@@ -1,0 +1,16 @@
+$red: #f23b46;
+$green: #2ecc71;
+$blue: #22a7f0;
+$orange: #ff6300;
+$contact: #61838a;
+$primary:$blue;
+$light:#fff;
+
+$primary-gradient: (
+    "start": $primary,
+    "stop":  darken($primary,15)
+) !default;
+
+$enable-shadows:true;
+$font-family-base: 'Muli';
+$enable-responsive-font-sizes:true;

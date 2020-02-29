@@ -5,18 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield("title",'Administration '.config('app.name'))</title>
+    {!! app('seotools')->generate() !!}
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ mix('/backend/css/admin.css') }}">
+    <link href="{{ mix('backend/css/admin.css') }}" rel="stylesheet">
 </head>
 <body>
-<div class="h-100 app">
-    @yield('content')
+<div class="c-app">
+    <div class="container-fluid">
+        @yield('content')
+    </div>
 </div>
 
-<script src="{{mix('/backend/js/manifest.js')}}"></script>
-<script src="{{mix('/backend/js/vendor.js')}}"></script>
-<script src="{{mix('/backend/js/admin.js')}}"></script>
+<script src="{{ mix('backend/js/manifest.js') }}" ></script>
+<script src="{{ mix('backend/js/vendor.js') }}" ></script>
+<script src="{{ mix('backend/js/admin.js') }}" ></script>
 
 @yield('scripts')
 @toastr_render
